@@ -1,24 +1,19 @@
 name: deploying site
 
-on:
-    [push]
-    
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push]
+
 
 jobs:
   build:
 
     runs-on: windows-2007
-    name:deploying to surge
+    
+    name: deploying to surge
 
     steps:
-    - uses: actions/checkout@v2
-name: 
-Installing node.js
-with:
-node-version:11.0.0
+      uses: actions/checkout@v2
+      name: Installing node.js
+with: node-version:11.0.0
 
 
 name: Install Surge
