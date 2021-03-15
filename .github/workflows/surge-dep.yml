@@ -15,6 +15,4 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-
-name: Run surge
-run:  softdev.surge.sh--token ${{ secrets.codespaces.SURGE_KEY }}
+env:  softdev.surge.sh--token ${{ secrets.codespaces.SURGE_KEY }}
