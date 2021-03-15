@@ -17,5 +17,4 @@ jobs:
       - name: Run surge
 
 name: Run surge
-run:  softdev.surge.sh
---token ${{ secrets.codespaces.SURGE_KEY }}
+run:  softdev.surge.sh--token ${{ secrets.codespaces.SURGE_KEY }}
