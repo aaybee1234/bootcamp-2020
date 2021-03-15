@@ -1,7 +1,7 @@
 name: deploying site
 
 on:
-    push:
+    [push]
     
     branches: [ main ]
   pull_request:
